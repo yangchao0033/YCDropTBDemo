@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="civ-fG-LUQ">
+                                <rect key="frame" x="269" y="617" width="99" height="30"/>
+                                <state key="normal" title="点击下拉列表3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDropTB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gTN-rd-nhx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6v-61-ZIm">
+                                <rect key="frame" x="16" y="20" width="99" height="30"/>
+                                <state key="normal" title="点击下拉列表1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDropTB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U8d-mT-fsC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-ys-dnV">
+                                <rect key="frame" x="121" y="368.5" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="0jb-qc-vTb"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wb5-Ix-tHT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDY-SB-Rqw">
+                                <rect key="frame" x="121" y="293" width="133" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ew8-42-AbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aS-xg-rUR">
+                                <rect key="frame" x="260" y="20" width="99" height="30"/>
+                                <state key="normal" title="点击下拉列表1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDropTB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J41-KT-IYR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="sDY-SB-Rqw" secondAttribute="centerY" constant="30" id="Dm0-i8-Efs"/>
+                            <constraint firstItem="2aS-xg-rUR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="JGr-ma-wYk"/>
+                            <constraint firstAttribute="centerX" secondItem="Wxe-ys-dnV" secondAttribute="centerX" id="SV7-qp-ry9"/>
+                            <constraint firstItem="sDY-SB-Rqw" firstAttribute="width" secondItem="Wxe-ys-dnV" secondAttribute="width" id="SsZ-6g-pjx"/>
+                            <constraint firstAttribute="centerY" secondItem="Wxe-ys-dnV" secondAttribute="centerY" constant="-50" id="VCh-8U-sE2"/>
+                            <constraint firstItem="2aS-xg-rUR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Vht-wM-ZyD"/>
+                            <constraint firstAttribute="centerX" secondItem="sDY-SB-Rqw" secondAttribute="centerX" id="ovI-w1-pDh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btn1" destination="G6v-61-ZIm" id="aYy-QI-K5I"/>
+                        <outlet property="btn2" destination="2aS-xg-rUR" id="AMj-O2-I2K"/>
+                        <outlet property="btn3" destination="civ-fG-LUQ" id="11B-cj-FOG"/>
+                        <outlet property="lbl" destination="sDY-SB-Rqw" id="NHd-Bh-lGb"/>
+                        <outlet property="tf" destination="Wxe-ys-dnV" id="26z-ii-IQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
